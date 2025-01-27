@@ -1,8 +1,31 @@
+/* Reset any root styles */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+.card {
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.border-primary {
+    box-shadow: 0 0 0 2px #0d6efd;
+}
+
+/* Remove card padding that was causing issues */
+.card {
+    padding: 0;
 }
 
 .logo {
@@ -31,10 +54,6 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
 }
 
 .read-the-docs {
