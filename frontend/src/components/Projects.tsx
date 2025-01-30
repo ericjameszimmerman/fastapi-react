@@ -94,7 +94,7 @@ export const Projects: React.FC = () => {
                                 </Card.Title>
                                 <Card.Text>{project.description}</Card.Text>
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <small className="text-muted">{project.tasks.length} tasks</small>
+                                    <small className="text-muted">{project.tasks?.length || 0} tasks</small>
                                     <Button
                                         variant="outline-secondary"
                                         size="sm"
